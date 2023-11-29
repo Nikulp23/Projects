@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+#newsFeed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the news feed area */
+    font-family: "Poppins", sans-serif;
+}
+
+.news-article {
+    background-color: #ffffff; /* Card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    border-radius: 8px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures the content fits within the borders */
+    padding: 20px; /* Padding inside each card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.news-article:hover {
+    transform: translateY(-5px); /* Slightly raise the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.news-article h3 {
+    margin-top: 0; /* Remove top margin from the title */
+    margin-bottom: 10px; /* Spacing between title and description */
+    font-size: 1.2em; /* Title font size */
+    color: #333; /* Title text color */
+}
+
+.news-article h3 a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Use the same color as the h3 element */
+}
+
+.news-article p {
+    margin: 0; /* Remove default margin from paragraphs */
+    font-size: 0.9em; /* Paragraph font size */
+    color: #666; /* Paragraph text color */
+}
+
+#newsHeader {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 3px;
+}
+
+#searchContainer {
+    display: flex;
+    gap: 10px; /* Space between search input and button */
+    margin-bottom: 20px; /* Spacing between search box and news articles */
+    font-family: "Poppins", sans-serif;
+}
+
+#newsSearchInput {
+    flex-grow: 1; /* Input box takes up available space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff; /* Example blue color */
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+#searchButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#searchContainer {
+    display: flex;
+    gap: 10px; /* Space between elements */
+    margin-bottom: 20px; /* Spacing below the container */
+    align-items: center; /* Vertically center elements */
+    font-family: "Poppins", sans-serif;
+}
+
+#newsSearchInput, #newsCategory {
+    flex-grow: 1; /* Both elements take up available space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+#newsCategory {
+    max-width: 200px; /* Limit width of the dropdown */
+}

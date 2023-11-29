@@ -1,0 +1,56 @@
+:root {
+    --background: #000000;
+    --navbar-width: 256px;
+    --navbar-width-min: 80px;
+    --navbar-dark-primary: #E7473C;
+    --navbar-dark-secondary: #E7473C;
+    --navbar-light-primary: #f5f6fa;
+    --navbar-light-secondary: #ffffff;
+}
+  
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Sidebar (25%) */
+.first {    
+    width: 17%; /* Allocate 25% width */    
+}
+
+/* Middle Section (50%) */
+.middle-section {
+    position: relative;
+    width: 57.5%;
+    margin-right: 10px;
+    height: fit-content; /* Allow the height to adapt to content */
+}
+
+.middle-section::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0;
+    bottom: 0;
+    width: 4px; /* Width of the border */
+    background-color: #000000; /* Border color */
+}
+
+
+.middle-section::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 0;
+    bottom: 0;
+    width: 4px; /* Width of the border */
+    background-color: #000000; /* Border color */
+}
+
+
+/* Right Sidebar (25%) */
+.last {
+    width: 25.5%; /* Allocate 25% width */
+    word-wrap: break-word;
+    margin-right: 50px;
+}

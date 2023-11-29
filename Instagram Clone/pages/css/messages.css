@@ -1,0 +1,135 @@
+
+
+.message-content {
+    flex-grow: 1; /* Take the remaining height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Style for individual messages */
+.message-send {
+    padding: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Place items at the start and end of the container */
+    align-items: center;
+}
+
+#toggle-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#toggle-button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+#arrow-icon {
+    margin: 0;
+    cursor: pointer;
+}
+
+
+/* Style for Sender Messages */
+.message.sender {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e3f2fd; /* Light blue background */
+    color: #000;
+    border-radius: 10px;
+    text-align: right;
+    max-width: 70%;
+    margin-left: auto; /* Align to the right */
+}
+
+/* Style for Receiver Messages */
+.message.receiver {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #000000; /* Light grey background */
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    max-width: 70%;
+    margin-right: auto; /* Align to the left */
+}
+
+/* Timestamp Styling */
+.timestamp {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Additional styles for user-friendliness */
+.message {
+    word-wrap: break-word; /* Ensure long words do not break layout */
+}
+
+.message-panel {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 440px;
+    background-color: #E7473C;
+    color: #fff;
+    padding: 10px;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: right 1.0s;
+    margin-right: 3px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px; /* Set a max height for the panel */
+}
+
+.message-content {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling for messages */
+    margin-bottom: 30px;
+}
+
+.button-container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #E7473C;
+}
+
+#message-form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: transparent;
+    display: flex;
+    gap: 10px; /* Space between input and button */
+}
+
+#typeMessage {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#sendMessage {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}

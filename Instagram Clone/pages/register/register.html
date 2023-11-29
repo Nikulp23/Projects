@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+</head>
+<body>
+
+    <form action="./create_account.php" class="red-fill" method="POST" enctype="multipart/form-data" id="registrationForm">   
+        <div class="image-container">
+            <img class="logo" src="../../css/pic.png" alt="Logo">
+        </div>
+
+        <h1>Register</h1>
+
+        <label for="first">First name:</label>
+        <input type="text" name="first" id="first" required/>
+
+        <br>
+
+        <label for="last">Last name:</label>
+        <input type="text" name="last" id="last" required/>
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required/>
+
+        <br>
+
+        <label for="rcsid">Rcsid:</label>
+        <input type="text" name="rcsid" id="rcsid" required/>
+
+        <br>
+
+        <label for="passcode">Password:</label>
+        <input type="text" name="passcode" id="passcode" required/>
+
+        <label for="bio">Bio:</label>
+        <input type="text" name="bio" placeholder="Tell us about yourself..."/>
+
+        <label for="pic">Profile Picture URL:</label>
+        <input type="text" name="pic" id="picURL" placeholder="Profile Picture URL"/>
+
+        <label for="picFile">Upload Profile Picture:</label>
+        <input type="file" name="picFile" id="picFile"/>        
+
+        <input type="submit" name="submitBtn" id="submitButton" />
+    </form>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+    apiKey: "AIzaSyCC88arNUwvG0DuWvh40V24BJIs1uOYIuw",
+    authDomain: "test-c216b.firebaseapp.com",
+    projectId: "test-c216b",
+    storageBucket: "test-c216b.appspot.com",
+    messagingSenderId: "710684545537",
+    appId: "1:710684545537:web:3eeb3bb4ddbf52abf06600"
+  };
+
+        const app = initializeApp(firebaseConfig);
+        const storage = getStorage(app);
+
+        document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const img_file = document.getElementById('picFile').files[0];
+            const img_url = document.getElementById('picURL').value;
+            let downloadURL = "";
+
+            if (img_file) {
+                const storageRef = ref(storage, 'profile_pictures/' + img_file.name);
+                const snapshot = await uploadBytes(storageRef, img_file);
+                downloadURL = await getDownloadURL(snapshot.ref);
+                console.log('File available at', downloadURL);
+            } else if (img_url) {
+                downloadURL = img_url;
+                console.log('Using provided URL:', downloadURL);
+            } else {
+                downloadURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN1_yYuKCCC3uu-36xM7XntMDF1cku1S_oNqP2ntw&s";
+                console.log('Using default URL:', downloadURL);
+            }
+
+            // Append the download URL to a hidden input
+            const hiddenInput = document.createElement('input');
+            hiddenInput.type = 'hidden';
+            hiddenInput.name = 'profilePicUrl';
+            hiddenInput.value = downloadURL;
+            this.appendChild(hiddenInput);
+
+            // Submit the form
+            this.submit();
+        });
+    </script>
+
+</body>
+</html>

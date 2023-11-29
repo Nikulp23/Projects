@@ -1,0 +1,108 @@
+body {
+    font-family: 'Asap', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width:100%;
+}
+
+.avator {
+    border-radius:100px;
+    width:48px;
+    margin-right: 15px;
+}
+  
+p {
+    color: #ffffff;
+}
+
+.tweet-wrap {
+    display: inline-block;
+    max-width:400px;
+    background: #E7473C;
+    margin: 0px auto;
+    margin-top: 16px;
+    border-radius:3px;
+    margin-right: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #e6ecf0;
+    border-top: 1px solid #e6ecf0;
+    border-radius: 16px;
+    margin-left: 20px;
+}
+  
+.tweet-header {
+    display: flex;
+    align-items:flex-start;
+    font-size:14px;
+}
+
+.tweet-header-info {
+    font-weight:bold;
+    color: #ffffff;
+}
+
+.tweet-header-info span {
+    color:#ffffff;
+    font-weight:normal;
+    margin-left: 5px;
+}
+
+.tweet-header-info p {
+    font-weight:normal;
+    margin-top: 5px;
+}
+
+.tweet-img-wrap {
+    padding-left: 5px;
+}
+
+.tweet-img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+  
+.tweet-info-counts {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.tweet-info-counts div {
+    display: flex;
+    margin-right: 20px;
+}
+
+.tweet-info-counts div svg {
+    color:#ffffff;
+    margin-right: 10px;
+}
+
+.options {
+    text-align: center;
+    margin-top: 16px;
+}
+
+hr {
+    border-color: black;
+    border-width: 2px;
+}
+
+.report {
+    cursor: pointer;
+}
+
+/* Define a new class for the "Analyze" button */
+.analyze-button {
+    background-color: #007bff; /* Change the background color */
+    color: #fff; /* Change the text color */
+    padding: 2px 4px; /* Adjust padding as needed */
+    border: none; /* Remove the default button border */
+    border-radius: 4px; /* Add rounded corners if desired */
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin-right: -10px;
+}
