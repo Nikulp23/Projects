@@ -1,0 +1,285 @@
+/* iit CSS File */ 
+  
+body {
+  font-family: Georgia, Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: rgb(232, 222, 209);
+  margin: 0;
+  display: flex;
+}
+
+#entering {
+  display: flex;
+  border-style: solid;
+  border-radius: 2em;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  height: 800px;
+  margin: 6em auto;
+  padding: 2em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  position: relative;
+  top: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  color: #000000;
+  text-decoration: underline;
+
+}
+
+#menu {
+  width: 100%;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0 0.5em 0 0;
+  color: #333;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#menu li.selected {
+  color: #333;
+  background-color: white;
+  border-bottom: 1px solid white;
+}
+
+#menu a {
+  display: block;
+  padding: 4px 20px;
+  text-decoration: none;
+}
+
+.messages,
+#jsMessages {
+  clear: both;
+  background-color: #ffd;
+  color: #333;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+#jsMessages {
+  display: none;
+}
+
+#updateMessage {
+  text-align: right;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+fieldset {
+  clear: both;
+  margin: 0;
+  padding-top: 1em; 
+  border: 1px solid #333;
+}
+
+.field {
+  width: 120px;
+  margin: 0 0.5em 0.5em 0;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+
+.value {
+  margin: 0 0 0.5em 0;
+}
+
+textarea {
+  width: 384px; 
+  background-color: #eee;
+  color: black;
+}
+
+input {
+  background-color: #eee;
+  color: black;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #eed;
+  color: black;
+}
+
+#save {
+  float: right;
+}
+
+h3 {
+  margin: 1em 0 0 0;
+  background-color: #555;
+  color: #eeeeee;
+  padding: 2px 4px;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  margin: 0;
+}
+
+th {
+  text-align: left;
+  padding-right: 1em;
+}
+
+td {
+  padding-right: 1em;
+}
+
+#actorTable {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #333;
+}
+
+#actorTable th {
+  background-color: #ddc;
+  padding: 2px 4px;
+}
+
+#actorTable td {
+  padding: 2px 4px;
+}
+
+#actorTable tr.odd td {
+  background-color: #eed;
+  color: black;
+}
+
+.deleteActor {
+  cursor: pointer;
+}
+
+.boxedContent {
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #333;
+}
+
+#footer {
+  text-align: center;
+  margin: 1em 0 0 0;
+  color: #000000;
+  background-color: transparent;
+}
+
+h5{
+  font-family: Palatino, Times New Roman, Times, serif;
+  font-variant: small-caps;
+  font-size: small;
+  font-size: larger;
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  border: none;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* add margin-bottom */
+
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formData {
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 90%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav ul li:not(:last-child) {
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #555;
+}

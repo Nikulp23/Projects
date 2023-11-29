@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise Videos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="display_style.css">
+
+    <style>
+
+      h2 {
+        font-size: 45px;
+        text-align: center;
+      }
+    </style>
+</head>
+
+
+<body>
+    <div class='header'>
+        <div class='navigationbar'>
+      <ul>
+        <li><a class="tabs" href="../../homepage.html">Back to Homepage</a></li>
+        <li><a class="tabs" href="../user_login/weekly_plan.php">My Fitness Plan</a></li>
+
+      </ul>
+        </div> 
+
+    <div class="split left">
+          <div class="vertical-menu">
+            <a href="#" class="active">SORT BY</a>
+            <a href="#" onclick="showAll('showall')">Show All</a>
+            <a href="#" onclick="filterItems('Lose Weight')">Lose Weight</a>
+            <a href="#" onclick="filterItems('Get Toned')">Get Toned</a>
+            <a href="#" onclick="filterItems('Flexibility')">Flexibility</a>
+          </div>
+    </div>
+
+        <div class="split right">
+
+          <h2>Links To Exercise Videos</h2>
+
+            <div id="items"></div>
+            <script src="function.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>

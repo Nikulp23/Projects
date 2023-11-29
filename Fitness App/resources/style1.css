@@ -1,0 +1,129 @@
+
+body {
+   margin: 0 auto;
+   background-color: rgb(232, 222, 209);
+}
+    
+h1 {
+   font-size: 30px;
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+    
+#centering{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-top: 8em;
+   margin-bottom:2em;
+}
+
+#welcomepage{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 2em;
+   width: 60%;
+   height: 60%;
+} 
+
+#slogan{
+   font-family: "Poppins";
+   color: #EF496E;
+   font-size: 3em;
+}
+
+#loginpage{
+   text-decoration: none;
+   font-size: 2em;
+   border-radius: 4em;
+   margin-top: 0.5em;
+   margin-bottom: 1.5em;
+   background-color: #bababa;
+   color: rgb(255, 255, 255);
+   padding: 5px 5em;
+}
+
+#createpage{
+   text-decoration: none;
+   font-size: 2em;
+   border-radius: 4em;
+   margin-top: 0.5em;
+   margin-bottom: 1.5em;
+   background-color: #bababa;
+   color: rgb(255, 255, 255);
+   padding: 5px 5em;
+}
+
+#loginpage1{
+   text-decoration: none;
+   font-size: 2em;
+   border-radius: 1em;
+   margin-bottom: 2em;
+   background-color: #bababa;
+   color: white;
+   padding: 8px 3em;
+}
+
+#loginpage2{
+   text-decoration: none;
+   font-size: 2em;
+   border-radius: 1em;
+   margin-bottom: 2em;
+   background-color: #bababa;
+   color: white;
+   padding: 8px 3em;
+   margin-top: 1em;
+}
+
+button{
+   border: none;
+}
+
+button:hover{
+   box-shadow: 0 12px 16px 0
+    rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#Logo{
+   width:20em;
+}
+
+#loginlogo{
+   margin-top: 2em;
+   width:8em;
+}
+#signup{
+   color: black;
+}
+#inputlines{
+   padding: 0.5em;
+   margin-bottom: 1.5em;
+   border-radius: 0.5em;
+}
+.password{
+   margin-top:1em;
+}
+#password{
+   padding:.4em;
+}
+#noaccount{
+   margin-top: -1em;
+   font-size: 1em;
+}
+.hideformat{
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+}
+#hide{
+   margin-top: 1em;
+}
+#hideicon{
+   width: 1em;
+   margin-right: 5px;
+}

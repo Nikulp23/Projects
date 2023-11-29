@@ -1,0 +1,7 @@
+Team: Nikul
+
+- This is our repository for our fitness app UniFit. Our goal is to make a fitness website that can track user's performance and creates weekly fitness plans. The app will be helpful for users who are looking to improve their overall health and wellness.
+
+- Our project is designed to help users create a fitness plan and track it. Using their inputs for their height, weight, and desired goal from the website, the website will give a weekly based fitness plan that includes the name of the exercise and a short description on how to do it with the right form. Upon opening the app, users are asked to either login or sign up if they don't have an account. If they don't have an account, they are asked to create one and enter their body details such as weight, height, age and time available for workouts. After this, users are asked about their fitness goals, such as weight loss, muscle gain, or overall fitness such as flexibility, and are then provided with a weekly workout plan for their goals. The workout plans include exercises with video links to ensure proper form and technique. The application will later feature a progress tracker that allows users to log their workouts and monitor their progress after every week. Overall, the prototype is designed to help users achieve their fitness goals by providing personalized workout plans.
+
+- We have our application ready for use. Users will now be able to go to our application and create their account, and generate a weekly plan.
